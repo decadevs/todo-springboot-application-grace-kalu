@@ -8,4 +8,10 @@ public interface TaskService {
     List<Task> getAllTasks();
 
     Task save(Task task);
+
+    Task findById(Integer id);
+
+    Task update(Task task);
+
+    void delete(Integer id);
 }

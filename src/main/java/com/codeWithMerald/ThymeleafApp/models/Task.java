@@ -14,14 +14,12 @@ import java.sql.Time;
 public class Task {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-
     private Integer id;
     private String status;
 
     @NotBlank
     @NotNull
     @Length( max = 255)
-
     private String title;
     private String description;
 
